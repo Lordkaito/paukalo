@@ -51,11 +51,13 @@
                     <a id="link" href="index" class="active">Home</a>
                 </li>
                 <li id="logo">
-                    <a id="link" class="no-padding" href="index"><img src="./images/logo/IMG-8655.webp" alt="paukalo logo"></a>
+                    <a id="enlace" class="no-padding hover" href="index">
+                        <img src="./images/logo/IMG-8655.webp" alt="paukalo logo">
+                    </a>
                 </li>
                 <li id="work">
-                    <a id="link" href="work">Work</a>
-                    <ul id="second-ul">
+                    <a id="link" class="work-link" href="#second-ul">Work</a>
+                    <ul id="second-ul" class="hidden">
                         <li class="trabajo">
                             <a id="link" class="list" href="work">General Work</a>
                         </li>
@@ -96,13 +98,13 @@
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="../images/trabajoFirmado/murales/image00039.webp" style="width:100%">
+                <img src="../images/trabajoFirmado/image00039.webp" style="width:100%">
                 <!-- <div class="text">Caption Two</div> -->
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="../images/trabajoFirmado/murales/image00074.webp" style="width:100%">
+                <img src="../images/trabajoFirmado/letter/image00074.webp" style="width:100%">
                 <!-- <div class="text">Caption Three</div> -->
             </div>
 
@@ -161,13 +163,19 @@
                 </div>
                 <div id="images">
                     <div id="image">
-                        <img src="./images/trabajoFirmado/camisetas/image00043.webp" alt="image1">
+                        <a href="https://www.instagram.com/p/CRE5yUKlclT/" target="_blank">
+                            <img src="./images/trabajoFirmado/libretas/image00088.webp" alt="image1">
+                        </a>
                     </div>
                     <div id="image">
-                        <img src="./images/trabajoFirmado/ilustracion/image00068.webp" alt="image2">
+                        <a href="https://www.instagram.com/p/CQ_clUXlXBf/" target="_blank">
+                            <img src="./images/trabajoFirmado/murales/image00085.webp" alt="image2">
+                        </a>
                     </div>
                     <div id="image">
-                        <img src="./images/trabajoFirmado/murales/image00073.webp" alt="image3">
+                        <a href="https://www.instagram.com/p/CPYHFIYB3nA/" target="_blank">
+                            <img src="./images/trabajoFirmado/carcasas/image00083.webp" alt="image3">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -195,7 +203,7 @@
         </div>
         </div>
     </footer>
-    <script src="../paukalo-landing/app.js"></script>
+    <script src="app.js"></script>
     <script>
         var slideIndex = 1;
         showSlides(slideIndex);

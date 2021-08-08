@@ -1,7 +1,7 @@
 var removeWorkLink = document.getElementById('work')
 var secondUl = document.getElementById('second-ul')
 var screenWidth = window.outerWidth
-// removeWorkLink.innerHTML = '<span class="active work link" style="margin: 2em; color: #000; font-size: 1.3em; padding: .4em;">Work</span>';
+var workLink = document.querySelector('.work-link')
 
 function isMobileDevice() {
     var check = false;
@@ -9,18 +9,14 @@ function isMobileDevice() {
     return check;
 };
 
-// if (screenWidth < 767 || ) {
-//     removeWorkLink.innerHTML = '<a class="work link" id="link" href="#second-ul">Work</a><ul id="second-ul"><li class="trabajo"><a id="link" class="list" href="work">General Work</a></li><li class="notebooks"><a id="link" href="notebooks" class="list">Notebooks</a><li class="murals"><a id="link" href="murals" class="list">Murals</a></li><li class="tshirts"><a id="link" href="tshirts" class="list">Tshirts & Hoodies</a></li><li class="illustrations"><a id="link" href="ilustrations" class="list">Illustrations</a></li><li class="phonecases"><a id="link" href="phonecases" class="list">Phone Cases</a></li></ul>';
-//     document.getElementsByClassName('work').addEventListener('click', function () {
-//         secondUl.style = '#second-ul:target {display: block}'
-//     })
-// }
 if (isMobileDevice) {
-    removeWorkLink.innerHTML = '<a class="work link" id="link" href="#second-ul">Work</a><ul id="second-ul"><li class="trabajo"><a id="link" class="list" href="work">General Work</a></li><li class="notebooks"><a id="link" href="notebooks" class="list">Notebooks</a><li class="murals"><a id="link" href="murals" class="list">Murals</a></li><li class="tshirts"><a id="link" href="tshirts" class="list">Tshirts & Hoodies</a></li><li class="illustrations"><a id="link" href="ilustrations" class="list">Illustrations</a></li><li class="phonecases"><a id="link" href="phonecases" class="list">Phone Cases</a></li></ul>';
-    var className= document.getElementsByClassName('work')
-    className.addEventListener('click', function () {
-        secondUl.style = '#second-ul:target {display: block}'
+    workLink.addEventListener('click', function () {
+        if (secondUl.classList.contains('hidden')) {
+            secondUl.classList.remove('hidden')
+            secondUl.classList.add('visible')
+        } else {
+            secondUl.classList.add('hidden')
+            secondUl.classList.remove('visible')
+        }
     })
-}
-
-
+} 
