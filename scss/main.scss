@@ -65,7 +65,7 @@ li {
                 text-align: center;
             }
             li #link{
-                margin: 2em;
+                margin: 1em 2em;
                 color: $main-black;
                 &:hover {
                     border-bottom: .1em solid $main-color!important; //we may change this later
@@ -99,6 +99,8 @@ li {
         }
     }
 }
+
+
 
 #enlace {
     margin: 0;
@@ -744,5 +746,16 @@ li {
 @media screen and (min-width: 1150px) {
     #work-container #work {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.trabajo, .phonecases {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0!important;
+    padding: 0;
+    a {
+        margin: 0;
     }
 }
