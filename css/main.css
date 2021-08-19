@@ -381,6 +381,38 @@ li {
   .tshirts #link {
     margin: 1em 1em !important; }
 
+.job-first {
+  margin-top: 7em; }
+
+.specific-class {
+  margin-top: 1em;
+  order: 3; }
+
+.specific-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center; }
+
+.only-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+.specific-text {
+  max-width: 80%;
+  text-align: center;
+  margin: auto; }
+  .specific-text h2 {
+    margin-bottom: 1em; }
+  .specific-text p {
+    font-size: 1.2em; }
+
+.full-width {
+  max-width: 100% !important; }
+
+.only-1 {
+  grid-template-columns: 1fr; }
+
 @media screen and (max-width: 767px) {
   html {
     font-size: .53em; }
@@ -459,7 +491,11 @@ li {
     top: 0;
     width: 100%; }
   #navbar #menu {
-    width: 100%; } }
+    width: 100%; }
+  .specific-grid {
+    grid-template-columns: 1fr; }
+  .only-1 {
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 1023px) {
   #navbar {
@@ -477,11 +513,21 @@ li {
 
 @media screen and (min-width: 768px) {
   #work-container #work {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .specific-grid {
+    grid-template-columns: repeat(2, 1fr); }
+  .only-1 {
+    grid-template-columns: 1fr; } }
 
 @media screen and (min-width: 1150px) {
   #work-container #work {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .specific-grid {
+    grid-template-columns: repeat(3, 1fr); }
+  .only-2 {
+    grid-template-columns: repeat(2, 1fr); }
+  .only-1 {
+    grid-template-columns: 1fr; } }
 
 .trabajo, .phonecases {
   display: flex;
