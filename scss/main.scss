@@ -554,6 +554,14 @@ li {
     margin: 0 1em;
 }
 
+.one-item {
+    grid-template-columns: 1fr;
+}
+
+.two-items {
+    grid-template-columns: repeat(2, 1fr)!important;
+}
+
 #navbar #menu #elements .hover:hover {
     border-bottom: none
 
@@ -577,7 +585,19 @@ li {
 
 .specific-class {
     margin-top: 1em;
-    order: 3;
+
+    .order-1 {
+        order: 1;
+    }
+
+    .order-2 {
+        order: 2;
+    }
+
+    .order-3 {
+        order: 3;
+    }
+
 }
 
 .specific-grid {
@@ -585,6 +605,14 @@ li {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
+}
+
+.one-item {
+    grid-template-columns: 1fr!important;
+}
+
+.two-items {
+    grid-template-columns: repeat(2, 1fr)!important;
 }
 
 .only-2 {
@@ -627,10 +655,6 @@ li {
 
     #home {
         order: 2;
-    }
-
-    #work {
-        order: 3;
     }
 
     #contact {
@@ -757,6 +781,14 @@ li {
         width: 100%;
     }
 
+    .one-item {
+        grid-template-columns: 1fr!important;
+    }
+
+    .two-items {
+        grid-template-columns: repeat(2, 1fr)!important;
+    }
+
     .specific-grid {
         grid-template-columns: 1fr;
     }
@@ -782,6 +814,12 @@ li {
 }
 }
 
+@media screen and (max-width: 390px) {
+    .two-items {
+        grid-template-columns: 1fr!important;
+    }
+}
+
 @media screen and (max-width: 280px) {
     #navbar {
         font-size: .7em;
@@ -792,6 +830,15 @@ li {
     #work-container #work {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .one-item {
+        grid-template-columns: 1fr!important;
+    }
+
+    .two-items {
+        grid-template-columns: repeat(2, 1fr)!important;
+    }
+
 
     .specific-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -804,6 +851,14 @@ li {
 @media screen and (min-width: 1150px) {
     #work-container #work {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .one-item {
+        grid-template-columns: 1fr!important;
+    }
+
+    .two-items {
+        grid-template-columns: repeat(2, 1fr)!important;
     }
 
     .specific-grid {
